@@ -8,10 +8,12 @@ permissions:
     mode: 777
 hooks:
   ApplicationStop:
+      echo inside application stop
     - location: stopApp.sh
       timeout: 60
       runas: root
 ApplicationStart:
+      echo inside application start
     - location: startApp.sh
       timeout: 60
       runas: root
