@@ -7,13 +7,8 @@ permissions:
   - object: /myapp/startApp.sh
     mode: 777
 hooks:
-  ApplicationStop:
-    - location: stopApp.sh
-      timeout: 60
-      runas: root
-      sudo: true
 ApplicationStart:
     - location: startApp.sh
       timeout: 60
       runas: root
-      sudo: true
+
