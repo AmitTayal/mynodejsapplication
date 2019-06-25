@@ -4,9 +4,8 @@ files:
   - source: /
     destination: /myapp
 permissions:
-  - object: /myapp/startApp.sh
-    mode: 777
-   - object: /myapp/stopApp.sh
+  - object: /myapp
+    pattern: "st*"
     mode: 777
 hooks:
 ApplicationStart:
