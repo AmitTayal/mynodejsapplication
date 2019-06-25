@@ -20,5 +20,5 @@ server.start(function(err){
     if (err) {
         throw err;
     }
-    console.log('Modified Server  running at:', server.info.uri);
+    console.log('TESTING version deployed Server  running at:', server.info.uri);
 });
